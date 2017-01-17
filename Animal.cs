@@ -7,9 +7,9 @@ namespace Zoolandia.Animals
         public string name { get; set; }
         public string height { get; set; }
         public string weight { get; set; }
-        public static void sleep ()
+        public virtual void sleep ()
         {
-            Console.WriteLine("Animal is now sleeping");
+            Console.WriteLine("Animal is now sleeping.");
         }
     }
 }

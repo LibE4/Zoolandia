@@ -6,7 +6,15 @@ namespace Zoolandia.Animals
     class Marine : Animal
     {
         // Define simple properties for a Red Panda
+        public Marine()
+        {
+            this.name = "myMarine";
+        }        
         public int fins { get; set; }        
         public float swimSpeed { get; set; }
+        public override void sleep()
+        {
+             Console.WriteLine("A marine animal is now sleeping.");
+        }
     }
 }
