@@ -10,6 +10,19 @@ namespace Zoolandia.Animals
         {
             this.name = "myMarine";
         }        
+        public Marine(string name)
+        {
+            this.name = name;
+        }         
+        public Marine(double weight) : this()
+        {
+            this.weight = weight;
+        }        
+        public Marine(string name, double weight)
+        {
+            this.name = name;
+            this.weight = weight;
+        }        
         public int fins { get; set; }        
         public float swimSpeed { get; set; }
         public override void sleep()
