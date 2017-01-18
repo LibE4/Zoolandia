@@ -39,6 +39,9 @@ namespace Zoolandia.Animals
             Console.WriteLine($"I have a jellyfish named {jellyfishNewN.name} who has {jellyfishNewN.weight} lb.");
             Console.WriteLine($"I have a tiger named {tigerNewN.name} who has {tigerNewN.weight} lb.");
             Console.WriteLine($"I have a robin named {robinNewN.name} who has {robinNewN.weight} lb.");
+            var myMonkey = new Arctoides();
+            myMonkey.walk();
+            myMonkey.walk(50);
         }
     }
 }
