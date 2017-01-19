@@ -4,8 +4,11 @@ namespace Zoolandia.Animals
 {
     class Cyclopis : Macaca
     {
-        string commonName = "Taiwan (or Formosan rock) macaque";
-        string scientificName = "Macaca cyclopis";
+         public Cyclopis()
+        {
+            this.commonName = "Taiwan (or Formosan rock) macaque";
+            this.scientificName = "Macaca cyclopis";
+        }
         public override void walk ()
         {
             Console.WriteLine("Animal333 is now walking.");

@@ -4,8 +4,11 @@ namespace Zoolandia.Animals
 {
     class Hecki : Macaca
     {
-        string commonName = "Heck's macaque";
-        string scientificName = "Macaca hecki";
+        public Hecki()
+        {
+            this.commonName = "Heck's macaque";
+            this.scientificName = "Macaca hecki";
+        }
         public override void walk ()
         {
             Console.WriteLine("Animal555 is now walking.");

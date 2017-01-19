@@ -1,4 +1,5 @@
 ﻿using System;
+using Zoolandia.Habitats;
 
 namespace Zoolandia.Animals
 {
@@ -42,6 +43,28 @@ namespace Zoolandia.Animals
             var myMonkey = new Arctoides();
             myMonkey.walk();
             myMonkey.walk(50);
+            myMonkey.climb();
+            var myForest = new Forest("Habitat: Forest");
+            var myHabitat = new Habitat();
+            var myArctoides = new Arctoides();
+            var myAssamensis = new Assamensis();
+            var myCyclopis = new Cyclopis();
+            var myFascicularis = new Fascicularis();
+            var myHecki = new Hecki();
+            var myMaurus = new Maurus();
+            myHabitat.inhabitants.Add(myArctoides);
+            myHabitat.inhabitants.Add(myAssamensis);
+            myHabitat.inhabitants.Add(myCyclopis);
+            myHabitat.inhabitants.Add(myFascicularis);
+            myHabitat.inhabitants.Add(myHecki);
+            myHabitat.inhabitants.Add(myMaurus);
+            Console.WriteLine(myForest.public_name);
+            foreach (Animal macaca in myHabitat.inhabitants)
+            {
+                Console.WriteLine(macaca.scientificName);
+            }
+
+
         }
     }
 }

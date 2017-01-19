@@ -4,8 +4,11 @@ namespace Zoolandia.Animals
 {
     class Maurus : Macaca
     {
-        string commonName = "moor macaque";
-        string scientificName = "Macaca maurus";
+        public Maurus()
+        {
+            this.commonName = "moor macaque";
+            this.scientificName = "Macaca maurus";
+        }
         public override void walk ()
         {
             Console.WriteLine("Animal666 is now walking.");
